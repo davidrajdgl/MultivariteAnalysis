@@ -27,6 +27,6 @@ will be updated soon...
 ### **Data Sets**
 
 > - [3judges.txt](https://raw.githubusercontent.com/davidrajdgl/MultivariteAnalysis/master/DataSets/3judges.txt)
-> - [crossSecData.xlsx]( MultivariteAnalysis/DataSets/crossSecData.xlsx)
-> - [csk.xlsx]( MultivariteAnalysis/DataSets/csk.xlsx )
+> - [crossSecData.xlsx](https://github.com/davidrajdgl/MultivariteAnalysis/blob/master/DataSets/crossSecData.xlsx)
+> - [csk.xlsx](https://github.com/davidrajdgl/MultivariteAnalysis/blob/master/DataSets/csk.xlsx)
 
