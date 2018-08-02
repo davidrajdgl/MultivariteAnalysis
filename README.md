@@ -15,7 +15,7 @@ listed here and not to depend only on this material.
 
 
 ### **Lecture Notes**
-> - [Lecture Notes 1]( MultivariteAnalysis/LectureNotes/lecture1.pdf )
+> - [Lecture Notes 1](https://github.com/davidrajdgl/MultivariteAnalysis/blob/master/LectureNotes/lecture1.pdf )
 
 
 
