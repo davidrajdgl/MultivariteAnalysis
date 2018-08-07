@@ -1,0 +1,135 @@
+---
+title: "Problem Sheet 2"
+author: "Your Name (Reg No)"
+subtitle: Mean Vectors & Covariance Matrices
+output:
+  pdf_document: default
+  html_notebook: default
+  word_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, echo=FALSE}
+library(lemon) #This is to show the table pretty in pdf
+knit_print.data.frame <- lemon_print
+```
+
+Consider the data set `crossSecData`(You may download the data set fom [https://github.com/davidrajdgl/MultivariteAnalysis/blob/master/DataSets/crossSecData.xlsx](https://github.com/davidrajdgl/MultivariteAnalysis/blob/master/DataSets/crossSecData.xlsx). The details of the variables are given below. 
+
+- Id : Patient Id
+- Diabetes: Diabetes Present : 1; Obsent : 0
+- Fat_intake: The amount of fat intake
+- Height : Height of the patient
+- Weight : Weight of the patient
+- SBP : Systollic Blood Pressure
+- DBP : Diastolic blood pressure
+
+**Important:** Dont forget to save the dataset in your working directory. Set the working directory before you proceed to answer any questions below. 
+
+
+**Load the data set Here:**
+```{r, caption ="First 5 rows of the Data Set"}
+library(readxl)
+data= read_excel('crossSecData.xlsx')
+head(data, n = 5) #Show only first 5 rows of the data
+```
+
+**Question 1** What is a Random vector?
+
+
+
+**Question 2:** What is the Random vector in this data set?
+
+*Answer:*
+
+```{r, message=FALSE, error=FALSE}
+meanVec = colnames(data)
+```
+
+The random vector of the data is  (`r meanVec` )$^T$.
+
+**Question 3: **  Generate a new data set from the `data`, consists of Fat_intake, Height, SBP and DBP only. Save the data set as 'newCrossSec' and print only first 10 rows of the new data. 
+
+*Answer:*  
+
+
+**Question 4: ** What is the Random Vector in the new data set?
+
+*Answer:*  
+
+**Question 5:**  What is the sample mean vector in the new data set? 
+
+*Answer:*  
+```{r}
+#Load the new data set as X 
+X  = 'Save the newCrossSec here'
+#using the matrix approach find the mean vector. Note that you have generate a vector of all ones. Hint: vector of all 2's can be acheived by `rep(2, 100)`
+one = 'Edit this place to generate vector of ones'
+SampleMeanVec = 'Edit this place to place the sample mean vector'
+```
+
+
+#### Some useful hints: 
+
+Remember to find the sample covariance matrix, we need to find the matrxi $X^*$ where 
+
+
+\begin{equation}
+X^* = \begin{pmatrix}
+X_{11} - \overline{X_1} & X_{12} - \overline{X_2} & \dots & X_{1p} - \overline{X_p} \\
+X_{21} - \overline{X_1} & X_{22} - \overline{X_2} & \dots & X_{2p} - \overline{X_p} \\
+\vdots                  & \vdots                  & \ddots& \vdots                  \\
+X_{n1} - \overline{X_1} & X_{n2} - \overline{X_2} & \dots & X_{np} - \overline{X_p} \\
+\end{pmatrix}
+\end{equation}
+
+Note that, this matrix can be obtained by 
+
+\begin{align}
+X^* & = 
+\begin{pmatrix}
+X_{11} -\overline{X_1} & X_{12} - \overline{X_2} & \dots & X_{1p} - \overline{X_p} \\
+X_{21} -\overline{X_1} & X_{22} - \overline{X_2} & \dots & X_{2p} - \overline{X_p} \\
+\vdots                & \vdots                  & \ddots& \vdots                  \\
+X_{n1} -\overline{X_1} & X_{n2} - \overline{X_2} & \dots & X_{np} - \overline{X_p} \\
+\end{pmatrix}\\
+& =
+\begin{pmatrix}
+X_{11} & X_{12} & \dots & X_{1p} \\
+X_{21} & X_{22} & \dots & X_{2p} \\
+\vdots& \vdots & \ddots & \vdots  \\
+X_{n1} & X_{n2}  & \dots & X_{np}  \\
+\end{pmatrix} - 
+\begin{pmatrix}
+\overline{X_1} & \overline{X_2} & \dots & \overline{X_p} \\
+\overline{X_1} & \overline{X_2} & \dots & \overline{X_p} \\
+\vdots         & \vdots         & \ddots& \vdots         \\
+\overline{X_1} & \overline{X_2} & \dots &  \overline{X_p} \\
+\end{pmatrix}\\ 
+ & =
+\begin{pmatrix}
+X_{11} & X_{12} & \dots & X_{1p} \\
+X_{21} & X_{22} & \dots & X_{2p} \\
+\vdots& \vdots & \ddots & \vdots  \\
+X_{n1} & X_{n2}  & \dots & X_{np}  \\
+\end{pmatrix} - 
+\begin{pmatrix}
+1 \\ 1 \\ \vdots \\ 1 
+\end{pmatrix}_{n\times 1}
+\begin{pmatrix} 
+\overline{X_1} & \overline{X_2} & \dots & \overline{X_p} 
+\end{pmatrix}_{1\times p}
+\end{align}
+
+
+
+
+**Question 6:** Find the sample covariance matrix of the new data set step by step using the lecture. 
+
+
+
+
+
+
+

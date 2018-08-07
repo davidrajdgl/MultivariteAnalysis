@@ -1,0 +1,42 @@
+---
+title: "Problem Sheet 1"
+author: "David Raj Micheal"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+# Question:
+
+In a baking competition, there are three judges who would score a cake created by each
+participant from zero (inedible) to ten (excellent). 
+There are ten contestants in the competition, and the matrix
+of scores are given in the
+following table.
+You can download the dataset from [here.](https://raw.githubusercontent.com/davidrajdgl/MultivariteAnalysis/master/DataSets/3judges.txt)
+
+
+```{r, ECHO = FALSE, caption ="Scores of Three Judges"}
+judges_data = read.table('3judges.txt', header = TRUE) 
+judges_data
+
+```
+
+**Answer the following questions: **
+
+\vspace{5cm}
+1. Which judge gives higher scores than the others?
+
+```{r}
+columnSums = colSums(judges_data)
+columnSums
+max(columnSums)
+```
+
+Therefore the judge 2 has given more score than the other judges. 
+
+```{r}
+plot(mtcars)
+```
+
+

@@ -1,0 +1,59 @@
+---
+title: "Problem Sheet 1"
+author: "David Raj Micheal"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+
+In a baking competition, there are three judges who would score a cake created by each
+participant from zero (inedible) to ten (excellent). 
+There are ten contestants in the competition, and the matrix
+of scores are given in the
+following table.
+You can download the dataset from [here.](https://raw.githubusercontent.com/davidrajdgl/MultivariteAnalysis/master/DataSets/3judges.txt)
+
+
+
+```{r, ECHO = FALSE, caption ="Scores of Three Judges"}
+judges_data = read.table('3judges.txt', header = TRUE) 
+judges_data
+
+```
+
+
+
+**Answer the following questions: **
+
+
+
+1. Which judge gives higher scores than the others?
+
+```{r}
+
+```
+
+
+
+2. What is the total and average score that each contestant received?
+
+
+
+
+
+3. The host of the competition realises that the first judge had a cold and the score he
+gave is not entirely reliable. So the host suggests that the scores given by Judge 1
+are weighted by 0.5, by Judge 2 are weighted by 1.25, and by Judge 3 are weighted
+by 1.25 as well. In this new scheme of scoring, what are the total scores that each
+individual receives?
+
+4. Judge 1 protested the new scheme and suggested a different scoring scheme. He sug-
+gested that the weights should be 0.5, 1.0, and 1.0 for Judge 1 to Judge 3 respectively.
+In this scheme, what is the average score per participant
+
+5. Add some random names for the constestants using `randomNames` package. 
+
+
+
+

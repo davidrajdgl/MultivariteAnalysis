@@ -1,0 +1,60 @@
+---
+title: "Practicals 1"
+subtitle: "Multivariate Data Visualization"
+author: "Your Name (Reg No)"
+output:
+  pdf_document: default
+  html_document:
+    df_print: kable
+  html_notebook: default
+---
+
+**Objective:** Exploring multivariate data visualization techniques
+
+**Materials and Methods:** Write down methods that you use to do this practicals.
+
+Consider the data set [csk.xlsx](https://drive.google.com/open?id=1u3kymtdd2XZHyza90LnYpqGGXyn0blVY). 
+The data set has 8 indian cricket players', of Chennai Super Kings, performance in the IPL 2018. The description of the variables are as follows: 
+
+- PLAYER : Name of the Player
+- Bt_Avg : Batting average
+- SR : Strike rate
+- 4s : Number of fours hit in IPL 2018
+- 6s : Number of sixers in IPL 2018
+- Ratio_inn_mat : Ratio of Innings to total matches played
+
+### Answer all the questions below: 
+*Note that, all the plots has to be captioned and the axis are to be labeled.* 
+
+**Question 1:** Using Chernoff faces, identify which player is the best? 
+
+*Answer:*
+Here you may type/code your answer.
+
+**Question 2: ** Use 3d scatter plot to visualize the distribution of Bt_Avg, 4s and 6s. 
+*Answer:*
+Here you may type/code your answer.
+
+
+**Question 3: ** Plot the pair wise scatter plots for the variables other than 'PLAYER'.
+
+*Answer:*
+Here you may type/code your answer.
+
+**Question 4: ** Using Stars portray the performance of each player. 
+
+*Answer:*
+Here you may type/code your answer.
+
+**Question 5: ** Visualize the strike rate for each players with respect to their 4s and 6s. What is the relationship you can infer from that? (Use glyphs)
+
+*Answer:*
+Here you may type/code your answer.
+
+**Bonus Question: **  What is the averge strike rate of the players? Visualize the relationship between the Batting averge and Strike rate. 
+
+*Answer:*
+Here you may type/code your answer.
+
+
+
