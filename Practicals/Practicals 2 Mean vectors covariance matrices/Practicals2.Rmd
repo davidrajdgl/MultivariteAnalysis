@@ -1,0 +1,49 @@
+---
+title: "Practicals 2"
+subtitle: "Mean Vectors, Covariance & Correlation Matrices"
+author: "Your Name (Reg No)"
+output:
+  html_notebook: default
+  html_document:
+    df_print: kable
+  pdf_document: default
+---
+
+**Objectives:** 
+
+- Generating multivariate data
+- Finding Mean vector, Covariance Matrix and Correlation Matrix for the generated Data set
+
+**Materials and Methods:**
+
+
+**Question** 
+
+- 1. Generate a multivariate data with five variables with the following properties.
+
+- Mean of all the variables is zero
+- The covariance matrix should be generated using the following code chunk.
+
+- 2. Find the Mean Vector, Covariance and Correlation Matrix using the lectures. 
+
+- 3. Verify the results with the mean and covariance matrices used to simulate the situation. 
+
+```{r}
+set.seed(1)
+Posdef <- function (n, ev = runif(n, 0, 10)) 
+{
+Z <- matrix(ncol=n, rnorm(n^2))
+decomp <- qr(Z)
+Q <- qr.Q(decomp) 
+R <- qr.R(decomp)
+d <- diag(R)
+ph <- d / abs(d)
+O <- Q %*% diag(ph)
+Z <- t(O) %*% diag(ev) %*% O
+return(Z)
+}
+pdmat <- Posdef(n=5, ev=1:5)
+pdmat
+```
+
+

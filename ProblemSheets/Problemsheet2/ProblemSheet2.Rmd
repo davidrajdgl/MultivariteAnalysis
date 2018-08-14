@@ -3,8 +3,8 @@ title: "Problem Sheet 2"
 author: "Your Name (Reg No)"
 subtitle: Mean Vectors & Covariance Matrices
 output:
-  pdf_document: default
   html_notebook: default
+  pdf_document: default
   word_document: default
   html_document:
     df_print: paged
@@ -39,34 +39,47 @@ head(data, n = 5) #Show only first 5 rows of the data
 
 
 
+
 **Question 2:** What is the Random vector in this data set?
 
 *Answer:*
 
 ```{r, message=FALSE, error=FALSE}
-meanVec = colnames(data)
+randVec = colnames(data)
+randVec
 ```
 
-The random vector of the data is  (`r meanVec` )$^T$.
+The random vector of the data is  (`r randVec` )$^T$.
 
 **Question 3: **  Generate a new data set from the `data`, consists of Fat_intake, Height, SBP and DBP only. Save the data set as 'newCrossSec' and print only first 10 rows of the new data. 
 
 *Answer:*  
+
+```{r}
+newCrossSec = data[ , c(3, 4,6,7)]
+
+head(newCrossSec, n = 10)
+```
 
 
 **Question 4: ** What is the Random Vector in the new data set?
 
 *Answer:*  
 
+
+
+
 **Question 5:**  What is the sample mean vector in the new data set? 
 
 *Answer:*  
 ```{r}
 #Load the new data set as X 
-X  = 'Save the newCrossSec here'
-#using the matrix approach find the mean vector. Note that you have generate a vector of all ones. Hint: vector of all 2's can be acheived by `rep(2, 100)`
-one = 'Edit this place to generate vector of ones'
-SampleMeanVec = 'Edit this place to place the sample mean vector'
+X  =  newCrossSec
+#using the matrix approach find the mean vector. Note that you have to  generate a vector of all ones. Hint: vector of all 2's can be acheived by `rep(2, 100)`
+one = rep(1, nrow(X))
+SampleMeanVec = 1 / nrow(X) * t(X) %*% one
+SampleMeanVec
+
 ```
 
 
