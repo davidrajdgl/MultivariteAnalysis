@@ -1,0 +1,220 @@
+---
+title: "Practicals 3 (Solution)"
+author: "Your Name (Reg.No)"
+subtitle: Mean, Covariance and Corelation of Bivariate data
+output:
+  pdf_document: null
+  html_document:
+    df_print: paged
+  html_notebook: default
+  word_document: default
+  df_print: kable
+---
+
+```{r setup, include=FALSE}
+# This chunk is added to enhance the table printing options for the pdf output. Check the markdown file for more details. 
+library(printr)
+
+knitr::knit_hooks$set(inline = as.character)
+```
+
+
+
+Consider the data on the height (in inches) and weight (in lbs.) of 20 college-age males
+from the file `HeightWeight.txt`. 
+
+**Questions:**
+  
+- Plot the scatter plot Height, Weight and Height Vs Weight
+- Find the mean vector, covariance matrix and correlation matrix.
+- Using matrix operation, create a new dataset where the hei
+ght and weight information from the observations are measured in metres and kilogr
+ams, respectively, in the height and weight data of 20 college-age males.
+
+- Calculate the covariance between height and weight in the new dataset. Compare it to the covariance in the original dataset. Do you see a difference?
+  - Calculate as well the correlation between height and weight in the new dataset using the matrix operation on the covariance matrix. Compare it to the correlation in the original dataset. Do you now see a difference?
+  
+
+# Solutions:
+  
+```{r}
+# A setup chunk is added to enhance the table printing options for the pdf output 
+# which uses a library called `printr`. 
+# Check the markdown file for more details.
+```
+  
+  
+## Loading the Data set:
+
+```{r message=FALSE, warning=FALSE}
+hwdata = read.table('HeightWeight.txt', header=T)
+```
+The few rows of the data set is given below:
+
+```{r}
+head(hwdata, n = 5)
+```
+
+
+## Plotting the scatter plot Height, Weight and Height Vs Weight:
+
+```{r}
+par(mfrow = c(2,2))
+plot(hwdata$Height,
+     main = "Scatter Plot Height", 
+     xlab ="Index", 
+     ylab = "Height")
+plot(hwdata$Weight,
+     main = "Scatter Plot Weight",
+     xlab ="Index",
+     ylab = "Height")
+plot(hwdata$Height ~ hwdata$Weight, 
+     main = "Scatter Plot Height Vs Weight",
+     xlab ="Height", ylab = "Weight")
+```
+
+## Finding the mean vector, covariance matrix and correlation matrix:
+
+**Finding the mean vector:**
+
+```{r}
+one = rep(1, nrow(hwdata))
+MeanVec = 1/nrow(hwdata) * t(hwdata) %*% one
+
+```
+The mean vector is given by, 
+```{r}
+MeanVec
+```
+
+
+
+**Finding the covariance matrix:**
+```{r}
+
+Y = hwdata - one %*% t(MeanVec)
+Y = as.matrix(Y)
+CovMat = 1/(nrow(hwdata) - 1 ) * t(Y) %*% Y
+```
+
+
+The variance-covariance matrix is given by, 
+```{r}
+CovMat
+```
+
+
+
+
+
+
+
+**Finding correlation matrix:**
+
+```{r}
+var = diag(CovMat)
+sd = diag(1/sqrt(var), ncol = 2)
+CorMat = sd %*% CovMat %*% sd
+```
+
+Therefore the correlation matrix is given by 
+```{r}
+CorMat = data.frame(CorMat)
+colnames(CorMat) = colnames(CovMat)
+rownames(CorMat) = rownames(CovMat)
+CorMat
+```
+
+
+## Creating a new data set by converting the units:
+
+```{r}
+newHWdata = data.frame(NewHt = 0.0254*hwdata$Height,
+                       NewWt = 0.4535*hwdata$Weight)
+```
+
+The first few rows of the new data set are, 
+
+```{r}
+head(newHWdata)
+```
+
+
+
+## Finding the mean vector, covariance matrix and correlation matrix for the new data set:
+
+**Finding the mean vector:**
+
+```{r}
+one = rep(1, nrow(newHWdata))
+NewMeanVec = 1/nrow(newHWdata) * t(newHWdata) %*% one
+```
+The mean vector is given by, 
+```{r}
+NewMeanVec
+```
+
+
+
+**Finding the covariance matrix:**
+```{r}
+Y = newHWdata - one %*% t(NewMeanVec)
+Y = as.matrix(Y)
+NewCovMat = 1/(nrow(newHWdata) - 1 ) * t(Y) %*% Y
+```
+
+
+The variance-covariance matrix is given by, 
+```{r}
+NewCovMat
+```
+
+
+**Comparison of covariance matrices between Original data set and new data set:**
+
+```{r}
+CovMat - NewCovMat
+```
+
+
+Clearly the covariance matrices are **different**. 
+
+
+
+
+
+**Finding correlation matrix:**
+
+```{r}
+newvar = diag(NewCovMat)
+newsd = diag(1/sqrt(newvar), ncol = 2)
+NewCorMat = newsd %*% NewCovMat %*% newsd
+```
+
+Therefore the correlation matrix is given by 
+```{r}
+NewCorMat = data.frame(NewCorMat)
+colnames(NewCorMat) = colnames(NewCovMat)
+rownames(NewCorMat) = rownames(NewCovMat)
+NewCorMat
+```
+
+
+
+
+**Comparison of covariance matrices between Original data set and new data set:**
+
+```{r}
+options(digits = 17) # To maintain the digits when knitting to pdf.
+CorMat - NewCorMat
+```
+
+All the entries in the above difference matrix is zero (or approximately zero) and hence it is concluded that there is no difference between correlation matrices from  the original data set and new data set. 
+
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@
 <meta name="author" content="Your Name (Reg.No)" />
 
 
-<title>Practicals 3</title>
+<title>Practicals 3 (Solution)</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -1670,7 +1670,7 @@ $(document).ready(function () {
 </style>
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("practicals3.Rmd");
+  window.initializeSourceEmbed("solnPracticals3.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>
@@ -1694,7 +1694,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Practicals 3</h1>
+<h1 class="title toc-ignore">Practicals 3 (Solution)</h1>
 <h3 class="subtitle"><em>Mean, Covariance and Corelation of Bivariate data</em></h3>
 <h4 class="author"><em>Your Name (Reg.No)</em></h4>
 
@@ -1702,20 +1702,319 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-text-begin -->
 <p>Consider the data on the height (in inches) and weight (in lbs.) of 20 college-age males from the file <code>HeightWeight.txt</code>.</p>
 <p><strong>Questions:</strong></p>
 <ul>
 <li>Plot the scatter plot Height, Weight and Height Vs Weight</li>
 <li>Find the mean vector, covariance matrix and correlation matrix.</li>
-<li><p>Using matrix operation, create a new dataset where the hei ght and weight information from the observations are measured in metres and kilogr ams, respectively, in the height and weight data of 20 college-age males.</p>
+<li><p>Using matrix operation, create a new dataset where the hei ght and weight information from the observations are measured in metres and kilogr ams, respectively, in the height and weight data of 20 college-age males.</p></li>
+<li>Calculate the covariance between height and weight in the new dataset. Compare it to the covariance in the original dataset. Do you see a difference?
 <ul>
-<li>Calculate the covariance between height and weight in the new dataset. Compare it to the covariance in the original dataset. Do you see a difference?</li>
 <li>Calculate as well the correlation between height and weight in the new dataset using the matrix operation on the covariance matrix. Compare it to the correlation in the original dataset. Do you now see a difference?</li>
 </ul></li>
 </ul>
+<div id="solutions" class="section level1">
+<h1>Solutions:</h1>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUaGlzIGNodW5rIGlzIGFkZGVkIHRvIGVuaGFuY2UgdGhlIHRhYmxlIHByaW50aW5nIG9wdGlvbnMgZm9yIHRoZSBwZGYgb3V0cHV0LiBDaGVjayB0aGUgbWFya2Rvd24gZmlsZSBmb3IgbW9yZSBkZXRhaWxzLlxubGlicmFyeShwcmludHIpXG5gYGAifQ== -->
+<pre class="r"><code># This chunk is added to enhance the table printing options for the pdf output. Check the markdown file for more details.
+library(printr)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="loading-the-data-set" class="section level2">
+<h2>Loading the Data set:</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaHdkYXRhID0gcmVhZC50YWJsZSgnSGVpZ2h0V2VpZ2h0LnR4dCcsIGhlYWRlcj1UKVxuaGVhZChod2RhdGEsIG4gPSA1KVxuYGBgIn0= -->
+<pre class="r"><code>hwdata = read.table('HeightWeight.txt', header=T)
+head(hwdata, n = 5)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6NX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJtMVF5MDdETUJEY09BbFJMZkdRK0k3bUFMOVFVTVdSQzcyYTFLUVd3YTRjVitYSWpXOUEvQUlTZjFnWU8xbUpSbGlhWkhmV3M3dWUrOFhxU3E0a0VRbktpNEpFanJBUStHUlUwQ3orWDRueXkzU0I2QlFvZ1J2Z0RsZ0F0OER5VCswRCtBWStnWGZnYTlLd3RPcEY5d2d1VXRPQlBGbHEwMjRDWnc5RGRpeWNlYmV2V1J5bmlUZEtwNXhPYURyVjh3UW01Vm9GVlQ5NTZKRWRKcExLYllOeEZpSVIzMXBOeEptZkVPYzdHemRaejV2TnpqN1ByK09BVkI3T2YzRTJicDJOUG5Fc2hsWEV6emlpWWhPMGJZM1YvS1pPUGVxT3Q0VUh2V3E1VnUyVnQ4YTJZM29HbjVKTjlkWWJ5NTVLc0gwZFhGRGNSVGF1WXlZNVFvZGZNSDRhNWc4Q0FBQT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Height"],"name":[1],"type":["int"],"align":["right"]},{"label":["Weight"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"69","2":"153","_rn_":"1"},{"1":"74","2":"175","_rn_":"2"},{"1":"68","2":"155","_rn_":"3"},{"1":"70","2":"135","_rn_":"4"},{"1":"72","2":"172","_rn_":"5"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The few rows of the data set is given below:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChod2RhdGEsIG4gPSA1KVxuYGBgIn0= -->
+<pre class="r"><code>head(hwdata, n = 5)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6NX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVF5MDdETUJEY09JK3FsbmhJZkVjamxXOG9xT0xJcGIyYTFMUlJVN3R5WE1HUkc5K0ErQVdrL21GaDdHU2xFRXVUN0l4M2RyMzd2RmpmeTdVa0lrRnBscEZJRVdZQ240UXltb2IvTzFGNkZ4T0lyb0FjZUFDZWdBWHdDQ3dIZDEvQUdmZ0dQb0dmVWNIY3FJTnVFZHpHb3AxWUxIVzkzWGxtcTQ3OU4wNmRmU3ZaSExxSkQ0b25IM2VvR3RWeUJ4YmxSbmxWdmpyNHdTNGp5OFFlZlcwTlRDTE1Xb3pNaVFzVm90Q2Q0ZVhOeVlSWGJXYlY3bVQycy9rZ05lbGZtdlM3NFZoMDdjVnZYNnJnd2JYWjFrYnpITm81NjVnMDZrVTNQYm5HS3VJbXlxT3JEYTlOUW0xTGI3M2lQRm5aaHBVNE5GMytBQlpEK052eUFRQUEifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Height"],"name":[1],"type":["int"],"align":["right"]},{"label":["Weight"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"69","2":"153","_rn_":"1"},{"1":"74","2":"175","_rn_":"2"},{"1":"68","2":"155","_rn_":"3"},{"1":"70","2":"135","_rn_":"4"},{"1":"72","2":"172","_rn_":"5"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="plotting-the-scatter-plot-height-weight-and-height-vs-weight" class="section level2">
+<h2>Plotting the scatter plot Height, Weight and Height Vs Weight:</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGFyKG1mcm93ID0gYygyLDIpKVxucGxvdChod2RhdGEkSGVpZ2h0LFxuICAgICBtYWluID0gXCJTY2F0dGVyIFBsb3QgSGVpZ2h0XCIsIFxuICAgICB4bGFiID1cIkluZGV4XCIsIFxuICAgICB5bGFiID0gXCJIZWlnaHRcIilcbnBsb3QoaHdkYXRhJFdlaWdodCxcbiAgICAgbWFpbiA9IFwiU2NhdHRlciBQbG90IFdlaWdodFwiLFxuICAgICB4bGFiID1cIkluZGV4XCIsXG4gICAgIHlsYWIgPSBcIkhlaWdodFwiKVxuYGBgIn0= -->
+<pre class="r"><code>par(mfrow = c(2,2))
+plot(hwdata$Height,
+     main = &quot;Scatter Plot Height&quot;, 
+     xlab =&quot;Index&quot;, 
+     ylab = &quot;Height&quot;)
+plot(hwdata$Weight,
+     main = &quot;Scatter Plot Weight&quot;,
+     xlab =&quot;Index&quot;,
+     ylab = &quot;Height&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChod2RhdGEkSGVpZ2h0IH4gaHdkYXRhJFdlaWdodCwgXG4gICAgIG1haW4gPSBcIlNjYXR0ZXIgUGxvdCBIZWlnaHQgVnMgV2VpZ2h0XCIsXG4gICAgIHhsYWIgPVwiSGVpZ2h0XCIsIHlsYWIgPSBcIldlaWdodFwiKVxuYGBgIn0= -->
+<pre class="r"><code>plot(hwdata$Height ~ hwdata$Weight, 
+     main = &quot;Scatter Plot Height Vs Weight&quot;,
+     xlab =&quot;Height&quot;, ylab = &quot;Weight&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-plot-begin eyJjb25kaXRpb25zIjpbXSwiaGVpZ2h0IjozNTYuNjEzMSwic2l6ZV9iZWhhdmlvciI6MCwid2lkdGgiOjU3N30= -->
+<p><img src="data:image/png;base64,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" /></p>
+<!-- rnb-plot-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="finding-the-mean-vector-covariance-matrix-and-correlation-matrix" class="section level2">
+<h2>Finding the mean vector, covariance matrix and correlation matrix:</h2>
+<p><strong>Finding the mean vector:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub25lID0gcmVwKDEsIG5yb3coaHdkYXRhKSlcbk1lYW5WZWMgPSAxL25yb3coaHdkYXRhKSAqIHQoaHdkYXRhKSAlKiUgb25lXG5NZWFuVmVjXG5gYGAifQ== -->
+<pre class="r"><code>one = rep(1, nrow(hwdata))
+MeanVec = 1/nrow(hwdata) * t(hwdata) %*% one
+MeanVec</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICBbLDFdXG5IZWlnaHQgIDcwLjBcbldlaWdodCAxNTIuMlxuIn0= -->
+<pre><code>        [,1]
+Height  70.0
+Weight 152.2</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The mean vector is given by,</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTWVhblZlY1xuYGBgIn0= -->
+<pre class="r"><code>MeanVec</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICBbLDFdXG5IZWlnaHQgIDcwLjBcbldlaWdodCAxNTIuMlxuIn0= -->
+<pre><code>        [,1]
+Height  70.0
+Weight 152.2</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p><strong>Finding the covariance matrix:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuWSA9IGh3ZGF0YSAtIG9uZSAlKiUgdChNZWFuVmVjKVxuWSA9IGFzLm1hdHJpeChZKVxuQ292TWF0ID0gMS8obnJvdyhod2RhdGEpIC0gMSApICogdChZKSAlKiUgWVxuQ292TWF0XG5gYGAifQ== -->
+<pre class="r"><code>Y = hwdata - one %*% t(MeanVec)
+Y = as.matrix(Y)
+CovMat = 1/(nrow(hwdata) - 1 ) * t(Y) %*% Y
+CovMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgSGVpZ2h0ICAgIFdlaWdodFxuSGVpZ2h0IDEwLjAwMDAwICA2Ny44ODg4OVxuV2VpZ2h0IDY3Ljg4ODg5IDYyMy43MzMzM1xuIn0= -->
+<pre><code>         Height    Weight
+Height 10.00000  67.88889
+Weight 67.88889 623.73333</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The variance-covariance matrix is given by,</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuQ292TWF0XG5gYGAifQ== -->
+<pre class="r"><code>CovMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgSGVpZ2h0ICAgIFdlaWdodFxuSGVpZ2h0IDEwLjAwMDAwICA2Ny44ODg4OVxuV2VpZ2h0IDY3Ljg4ODg5IDYyMy43MzMzM1xuIn0= -->
+<pre><code>         Height    Weight
+Height 10.00000  67.88889
+Weight 67.88889 623.73333</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p><strong>Finding correlation matrix:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmFyID0gZGlhZyhDb3ZNYXQpXG5zZCA9IGRpYWcoMS9zcXJ0KHZhciksIG5jb2wgPSAyKVxuQ29yTWF0ID0gc2QgJSolIENvdk1hdCAlKiUgc2RcbkNvck1hdFxuYGBgIn0= -->
+<pre class="r"><code>var = diag(CovMat)
+sd = diag(1/sqrt(var), ncol = 2)
+CorMat = sd %*% CovMat %*% sd
+CorMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgIFssMV0gICAgICBbLDJdXG5bMSxdIDEuMDAwMDAwMCAwLjg1OTYwNTZcblsyLF0gMC44NTk2MDU2IDEuMDAwMDAwMFxuIn0= -->
+<pre><code>          [,1]      [,2]
+[1,] 1.0000000 0.8596056
+[2,] 0.8596056 1.0000000</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Therefore the correlation matrix is given by</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuQ29yTWF0ID0gZGF0YS5mcmFtZShDb3JNYXQpXG5jb2xuYW1lcyhDb3JNYXQpID0gY29sbmFtZXMoQ292TWF0KVxucm93bmFtZXMoQ29yTWF0KSA9IHJvd25hbWVzKENvdk1hdClcbkNvck1hdFxuYGBgIn0= -->
+<pre class="r"><code>CorMat = data.frame(CorMat)
+colnames(CorMat) = colnames(CovMat)
+rownames(CorMat) = rownames(CovMat)
+CorMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJndHlpVERpaXVCaVlHQmdZbUJtWVdGZ1lnWXlXWmlBQkNNREN3TW5pSzVnWUdBV0JpdGdZT0FEMGZZZkdNREEvblhqNDk1UTZVbHdjU2dmS3MrSVpoQnJYbUp1YWpHUUlRQTJEQ0xJNXBHYW1aNVJBdU9GUTNpb0dqbUw4c3YxeU5YTW1weVRXQXpUQ0JQa1Nra3NTZFJMS3dLYUNlVDlROVBDbmw5UWtwbWZCOVRFQlBJM0c1cG14aUtRQ1JBUGdnR3lKSDlwSHNpbEtickpHYVY1MmJxV1NFcEJtQmRLTTZHeVFkWXovWWNheFFielQycGVlbVplS3N3ZnFVVkYrVVV3VGs1aVVtb09sTU1IREI1dzZPZ1ZGR1htd1VLREN5aGFyRmVTWDVJSVU4ZVZuSjhERXdGN211RWZBT0RJaDB2K0FRQUEifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Height"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Weight"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"1.00000000000000000","2":"0.85960557559961814","_rn_":"Height"},{"1":"0.85960557559961814","2":"1.00000000000000022","_rn_":"Weight"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="creating-a-new-data-set-by-converting-the-units" class="section level2">
+<h2>Creating a new data set by converting the units:</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmV3SFdkYXRhID0gZGF0YS5mcmFtZShOZXdIdCA9IDAuMDI1NCpod2RhdGEkSGVpZ2h0LCBOZXdXdCA9IDAuNDUzNSpod2RhdGEkV2VpZ2h0KVxuaGVhZChuZXdIV2RhdGEpXG5gYGAifQ== -->
+<pre class="r"><code>newHWdata = data.frame(NewHt = 0.0254*hwdata$Height, NewWt = 0.4535*hwdata$Weight)
+head(newHWdata)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Nn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJndHlpVERpaXVCaVlHQmdZbUJtWVdGZ1lnWXlXWmlBQkNNREN3TW5pSzVnWUdBV0JpdGdZT0FEWWpiN1AxekxmUFNicSszL0NWMHZsdmdUWVA5NzBaenlXZGtCOW4rS05pZ2NtYjNNL3EvVDRaUHZUdisyLzIwMWFURnJzQnBNbjBOZ3hCb09RN1ZYRHNIWGpVSEFJWERTanNEWHJmSU9mbk9xSHJxdkUzVUliZ0JxWC9yRUlaQnhKaERNUW5NSWExNWlibW94a0NFQWRneFUwQysxM0tNRWlSTmVncWFOc3lpL1hBK21sUmVrdFlFQkROalF6VS9PU1N5R21ROFQ1RXBKTEVuVVN5c0M2Z2Z5L3FGcFljOHZLTW5NendOcVloS0dtSWlpbWJFSVpBSllBQUtRSmZsTDgwQ3VTdEZOemlqTnk5WTFSbExLQ0hVcEk5Uk1HSnNKWWozVGY2aFJiRkNqMkZMejBqUHpVbUgrU0MwcXlpK0NjWElTazFKem9CdytZRkNBUTBLdm9DZ3pEeFpxWEVEUllyMlMvSkpFbURxdTVQd2NtQWpZMHd6L0FGak8yaTRvQWdBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["NewHt"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["NewWt"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"1.7525999999999999","2":"69.385500000000008","_rn_":"1"},{"1":"1.8795999999999999","2":"79.362499999999997","_rn_":"2"},{"1":"1.7271999999999998","2":"70.292500000000004","_rn_":"3"},{"1":"1.7780000000000000","2":"61.222500000000004","_rn_":"4"},{"1":"1.8288000000000000","2":"78.002000000000010","_rn_":"5"},{"1":"1.7018000000000000","2":"68.025000000000006","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The first few rows of the new data set are,</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChuZXdIV2RhdGEpXG5gYGAifQ== -->
+<pre class="r"><code>head(newHWdata)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="finding-the-mean-vector-covariance-matrix-and-correlation-matrix-for-the-new-data-set" class="section level2">
+<h2>Finding the mean vector, covariance matrix and correlation matrix for the new data set:</h2>
+<p><strong>Finding the mean vector:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub25lID0gcmVwKDEsIG5yb3cobmV3SFdkYXRhKSlcbk5ld01lYW5WZWMgPSAxL25yb3cobmV3SFdkYXRhKSAqIHQobmV3SFdkYXRhKSAlKiUgb25lXG5gYGAifQ== -->
+<pre class="r"><code>one = rep(1, nrow(newHWdata))
+NewMeanVec = 1/nrow(newHWdata) * t(newHWdata) %*% one</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The mean vector is given by,</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTmV3TWVhblZlY1xuYGBgIn0= -->
+<pre class="r"><code>NewMeanVec</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgWywxXVxuTmV3SHQgIDEuNzc4MFxuTmV3V3QgNjkuMDIyN1xuIn0= -->
+<pre><code>         [,1]
+NewHt  1.7780
+NewWt 69.0227</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p><strong>Finding the covariance matrix:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuWSA9IG5ld0hXZGF0YSAtIG9uZSAlKiUgdChOZXdNZWFuVmVjKVxuWSA9IGFzLm1hdHJpeChZKVxuTmV3Q292TWF0ID0gMS8obnJvdyhuZXdIV2RhdGEpIC0gMSApICogdChZKSAlKiUgWVxuYGBgIn0= -->
+<pre class="r"><code>Y = newHWdata - one %*% t(NewMeanVec)
+Y = as.matrix(Y)
+NewCovMat = 1/(nrow(newHWdata) - 1 ) * t(Y) %*% Y</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The variance-covariance matrix is given by,</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTmV3Q292TWF0XG5gYGAifQ== -->
+<pre class="r"><code>NewCovMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgIE5ld0h0ICAgICAgIE5ld1d0XG5OZXdIdCAwLjAwNjQ1MTYgICAwLjc4MjAwNTNcbk5ld1d0IDAuNzgyMDA1MyAxMjguMjc4NDAwN1xuIn0= -->
+<pre><code>          NewHt       NewWt
+NewHt 0.0064516   0.7820053
+NewWt 0.7820053 128.2784007</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p><strong>Comparison of covariance matrices between Original data set and new data set:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuQ292TWF0IC0gTmV3Q292TWF0XG5gYGAifQ== -->
+<pre class="r"><code>CovMat - NewCovMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgTmV3SHQgTmV3V3Rcbk5ld0h0ICAgICAwICAgICAwXG5OZXdXdCAgICAgMCAgICAgMFxuIn0= -->
+<pre><code>      NewHt NewWt
+NewHt     0     0
+NewWt     0     0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Clearly the covariance matrices are <strong>different</strong>.</p>
+<p><strong>Finding correlation matrix:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmV3dmFyID0gZGlhZyhOZXdDb3ZNYXQpXG5uZXdzZCA9IGRpYWcoMS9zcXJ0KG5ld3ZhciksIG5jb2wgPSAyKVxuTmV3Q29yTWF0ID0gbmV3c2QgJSolIE5ld0Nvdk1hdCAlKiUgbmV3c2RcbmBgYCJ9 -->
+<pre class="r"><code>newvar = diag(NewCovMat)
+newsd = diag(1/sqrt(newvar), ncol = 2)
+NewCorMat = newsd %*% NewCovMat %*% newsd</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Therefore the correlation matrix is given by</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTmV3Q29yTWF0ID0gZGF0YS5mcmFtZShOZXdDb3JNYXQpXG5jb2xuYW1lcyhOZXdDb3JNYXQpID0gY29sbmFtZXMoTmV3Q292TWF0KVxucm93bmFtZXMoTmV3Q29yTWF0KSA9IHJvd25hbWVzKE5ld0Nvdk1hdClcbk5ld0Nvck1hdFxuYGBgIn0= -->
+<pre class="r"><code>NewCorMat = data.frame(NewCorMat)
+colnames(NewCorMat) = colnames(NewCovMat)
+rownames(NewCorMat) = rownames(NewCovMat)
+NewCorMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJwMVF2UTdDSUJDKzBscFRFbjhTUjUvQkRyNUFGd2NuQnhPaksxYlV4Z3FHWW5UMUFVejBHUjFkZkFJVkVFenRLQW5jZlIvM2ZYQTNIc3o2ZUlZQkFJRWZCSUI4bFFaSUhSNEVFT2w0QlBBN3BnQ2dxV1B5QUwyODVINjZuU2ZkNjVmLzRJdTdyeGpWR05uU1FpVnRZMmJKRVQwTVpRbE1aVVVXQ1g2SS81UFcwcHdVVHVaSXZDQ1N4RXVoSEJWNlZpUjF2cE1aWjBxRWRNOWhSZXdKN2ZCcHpxenlaV3ZQOUQ4WHZYUzlaNXRldjFTcWQ4Tkc5SnZyNTlITFdvWFdLcVJzbFRIcStxQkNjT0ZBVHVZMHQ2Q3BobU5tRSs5RXh0d3dzR0tMV0hKSlhCMU9lZTRZMHpRODM5UHFNOG42QVFBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["NewHt"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["NewWt"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"1.00000000000000022","2":"0.85960557559961792","_rn_":"NewHt"},{"1":"0.85960557559961803","2":"1.00000000000000022","_rn_":"NewWt"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p><strong>Comparison of covariance matrices between Original data set and new data set:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub3B0aW9ucyhkaWdpdHMgPSAxNykgIyBUbyBtYWludGFpbiB0aGUgZGlnaXRzIHdoZW4ga25pdHRpbmcgdG8gcGRmLlxuQ29yTWF0IC0gTmV3Q29yTWF0XG5gYGAifQ== -->
+<pre class="r"><code>options(digits = 17) # To maintain the digits when knitting to pdf.
+CorMat - NewCorMat</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJwMVFTdzZDTUJBZEMySnM0aWZ4SEpEb21xVUwxMjUwVzZFQ0VWdFRTdlE0SHNFRGVEYTFMVXdDTEoya3pMelhlYS9NN0xmSERUMVNBQ0RnK1Q0UXo1UStNWjhSK0RDMStRSGdyVndEd056bTl3dGN4RS9BY0h6OGdrSDBqTWFDWFhsbGlxVXphOGhneDRzczE0Z09EZW9McDByZW8zL0Y0NlJrRlFxUnBDblRMRG9yNDJuUVp5Q1p5SnN1cERBaVl1Y09CdUtSc2c2T2FLSjd1YWlGL2RNMFRQSmFYTUoxcDlXZVdadEp2N2JQazI5ckZlQThYR1NGNERnSFYwb3FCQ1U3OGJJRmM3TWV0NTNvcGdxQjI2Q0dyU0l0TmNNK21zZ1NHVGMwZkg1eHN4dzcvZ0VBQUE9PSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Height"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Weight"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"-2.2204460492503131e-16","2":"2.2204460492503131e-16","_rn_":"Height"},{"1":"1.1102230246251565e-16","2":"0.0000000000000000e+00","_rn_":"Weight"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>All the entries in the above difference matrix is zero (or approximately zero) and hence it is concluded that there is no difference between correlation matrices from the original data set and new data set.</p>
+<!-- rnb-text-end -->
+</div>
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlByYWN0aWNhbHMgMyINCmF1dGhvcjogIllvdXIgTmFtZSAoUmVnLk5vKSINCnN1YnRpdGxlOiBNZWFuLCBDb3ZhcmlhbmNlIGFuZCBDb3JlbGF0aW9uIG9mIEJpdmFyaWF0ZSBkYXRhDQpvdXRwdXQ6DQogIHBkZl9kb2N1bWVudDogZGVmYXVsdA0KICBodG1sX25vdGVib29rOiBkZWZhdWx0DQotLS0NCg0KQ29uc2lkZXIgdGhlIGRhdGEgb24gdGhlIGhlaWdodCAoaW4gaW5jaGVzKSBhbmQgd2VpZ2h0IChpbiBsYnMuKSBvZiAyMCBjb2xsZWdlLWFnZSBtYWxlcw0KZnJvbSB0aGUgZmlsZSBgSGVpZ2h0V2VpZ2h0LnR4dGAuIA0KDQoqKlF1ZXN0aW9uczoqKg0KDQotIFBsb3QgdGhlIHNjYXR0ZXIgcGxvdCBIZWlnaHQsIFdlaWdodCBhbmQgSGVpZ2h0IFZzIFdlaWdodA0KLSBGaW5kIHRoZSBtZWFuIHZlY3RvciwgY292YXJpYW5jZSBtYXRyaXggYW5kIGNvcnJlbGF0aW9uIG1hdHJpeC4NCi0gVXNpbmcgbWF0cml4IG9wZXJhdGlvbiwgY3JlYXRlIGEgbmV3IGRhdGFzZXQgd2hlcmUgdGhlIGhlaQ0KZ2h0IGFuZCB3ZWlnaHQgaW5mb3JtYXRpb24gZnJvbSB0aGUgb2JzZXJ2YXRpb25zIGFyZSBtZWFzdXJlZCBpbiBtZXRyZXMgYW5kIGtpbG9ncg0KYW1zLCByZXNwZWN0aXZlbHksIGluIHRoZSBoZWlnaHQgYW5kIHdlaWdodCBkYXRhIG9mIDIwIGNvbGxlZ2UtYWdlIG1hbGVzLg0KDQogIC0gQ2FsY3VsYXRlIHRoZSBjb3ZhcmlhbmNlIGJldHdlZW4gaGVpZ2h0IGFuZCB3ZWlnaHQgaW4gdGhlIG5ldyBkYXRhc2V0LiBDb21wYXJlIGl0IHRvIHRoZSBjb3ZhcmlhbmNlIGluIHRoZSBvcmlnaW5hbCBkYXRhc2V0LiBEbyB5b3Ugc2VlIGEgZGlmZmVyZW5jZT8NCiAgLSBDYWxjdWxhdGUgYXMgd2VsbCB0aGUgY29ycmVsYXRpb24gYmV0d2VlbiBoZWlnaHQgYW5kIHdlaWdodCBpbiB0aGUgbmV3IGRhdGFzZXQgdXNpbmcgdGhlIG1hdHJpeCBvcGVyYXRpb24gb24gdGhlIGNvdmFyaWFuY2UgbWF0cml4LiBDb21wYXJlIGl0IHRvIHRoZSBjb3JyZWxhdGlvbiBpbiB0aGUgb3JpZ2luYWwgZGF0YXNldC4gRG8geW91IG5vdyBzZWUgYSBkaWZmZXJlbmNlPw0KDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlByYWN0aWNhbHMgMyAoU29sdXRpb24pIg0KYXV0aG9yOiAiWW91ciBOYW1lIChSZWcuTm8pIg0Kc3VidGl0bGU6IE1lYW4sIENvdmFyaWFuY2UgYW5kIENvcmVsYXRpb24gb2YgQml2YXJpYXRlIGRhdGENCm91dHB1dDoNCiAgcGRmX2RvY3VtZW50OiBudWxsDQogIGh0bWxfZG9jdW1lbnQ6DQogICAgZGZfcHJpbnQ6IHBhZ2VkDQogIGh0bWxfbm90ZWJvb2s6IGRlZmF1bHQNCiAgd29yZF9kb2N1bWVudDogZGVmYXVsdA0KICBkZl9wcmludDoga2FibGUNCi0tLQ0KDQpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0NCiMgVGhpcyBjaHVuayBpcyBhZGRlZCB0byBlbmhhbmNlIHRoZSB0YWJsZSBwcmludGluZyBvcHRpb25zIGZvciB0aGUgcGRmIG91dHB1dC4gQ2hlY2sgdGhlIG1hcmtkb3duIGZpbGUgZm9yIG1vcmUgZGV0YWlscy4gDQpsaWJyYXJ5KHByaW50cikNCg0Ka25pdHI6OmtuaXRfaG9va3Mkc2V0KGlubGluZSA9IGFzLmNoYXJhY3RlcikNCmBgYA0KDQoNCg0KQ29uc2lkZXIgdGhlIGRhdGEgb24gdGhlIGhlaWdodCAoaW4gaW5jaGVzKSBhbmQgd2VpZ2h0IChpbiBsYnMuKSBvZiAyMCBjb2xsZWdlLWFnZSBtYWxlcw0KZnJvbSB0aGUgZmlsZSBgSGVpZ2h0V2VpZ2h0LnR4dGAuIA0KDQoqKlF1ZXN0aW9uczoqKg0KICANCi0gUGxvdCB0aGUgc2NhdHRlciBwbG90IEhlaWdodCwgV2VpZ2h0IGFuZCBIZWlnaHQgVnMgV2VpZ2h0DQotIEZpbmQgdGhlIG1lYW4gdmVjdG9yLCBjb3ZhcmlhbmNlIG1hdHJpeCBhbmQgY29ycmVsYXRpb24gbWF0cml4Lg0KLSBVc2luZyBtYXRyaXggb3BlcmF0aW9uLCBjcmVhdGUgYSBuZXcgZGF0YXNldCB3aGVyZSB0aGUgaGVpDQpnaHQgYW5kIHdlaWdodCBpbmZvcm1hdGlvbiBmcm9tIHRoZSBvYnNlcnZhdGlvbnMgYXJlIG1lYXN1cmVkIGluIG1ldHJlcyBhbmQga2lsb2dyDQphbXMsIHJlc3BlY3RpdmVseSwgaW4gdGhlIGhlaWdodCBhbmQgd2VpZ2h0IGRhdGEgb2YgMjAgY29sbGVnZS1hZ2UgbWFsZXMuDQoNCi0gQ2FsY3VsYXRlIHRoZSBjb3ZhcmlhbmNlIGJldHdlZW4gaGVpZ2h0IGFuZCB3ZWlnaHQgaW4gdGhlIG5ldyBkYXRhc2V0LiBDb21wYXJlIGl0IHRvIHRoZSBjb3ZhcmlhbmNlIGluIHRoZSBvcmlnaW5hbCBkYXRhc2V0LiBEbyB5b3Ugc2VlIGEgZGlmZmVyZW5jZT8NCiAgLSBDYWxjdWxhdGUgYXMgd2VsbCB0aGUgY29ycmVsYXRpb24gYmV0d2VlbiBoZWlnaHQgYW5kIHdlaWdodCBpbiB0aGUgbmV3IGRhdGFzZXQgdXNpbmcgdGhlIG1hdHJpeCBvcGVyYXRpb24gb24gdGhlIGNvdmFyaWFuY2UgbWF0cml4LiBDb21wYXJlIGl0IHRvIHRoZSBjb3JyZWxhdGlvbiBpbiB0aGUgb3JpZ2luYWwgZGF0YXNldC4gRG8geW91IG5vdyBzZWUgYSBkaWZmZXJlbmNlPw0KICANCg0KIyBTb2x1dGlvbnM6DQogIA0KYGBge3J9DQojIEEgc2V0dXAgY2h1bmsgaXMgYWRkZWQgdG8gZW5oYW5jZSB0aGUgdGFibGUgcHJpbnRpbmcgb3B0aW9ucyBmb3IgdGhlIHBkZiBvdXRwdXQgDQojIHdoaWNoIHVzZXMgYSBsaWJyYXJ5IGNhbGxlZCBgcHJpbnRyYC4gDQojIENoZWNrIHRoZSBtYXJrZG93biBmaWxlIGZvciBtb3JlIGRldGFpbHMuDQpgYGANCiAgDQogIA0KIyMgTG9hZGluZyB0aGUgRGF0YSBzZXQ6DQoNCmBgYHtyIG1lc3NhZ2U9RkFMU0UsIHdhcm5pbmc9RkFMU0V9DQpod2RhdGEgPSByZWFkLnRhYmxlKCdIZWlnaHRXZWlnaHQudHh0JywgaGVhZGVyPVQpDQpgYGANClRoZSBmZXcgcm93cyBvZiB0aGUgZGF0YSBzZXQgaXMgZ2l2ZW4gYmVsb3c6DQoNCmBgYHtyfQ0KaGVhZChod2RhdGEsIG4gPSA1KQ0KYGBgDQoNCg0KIyMgUGxvdHRpbmcgdGhlIHNjYXR0ZXIgcGxvdCBIZWlnaHQsIFdlaWdodCBhbmQgSGVpZ2h0IFZzIFdlaWdodDoNCg0KYGBge3J9DQpwYXIobWZyb3cgPSBjKDIsMikpDQpwbG90KGh3ZGF0YSRIZWlnaHQsDQogICAgIG1haW4gPSAiU2NhdHRlciBQbG90IEhlaWdodCIsIA0KICAgICB4bGFiID0iSW5kZXgiLCANCiAgICAgeWxhYiA9ICJIZWlnaHQiKQ0KcGxvdChod2RhdGEkV2VpZ2h0LA0KICAgICBtYWluID0gIlNjYXR0ZXIgUGxvdCBXZWlnaHQiLA0KICAgICB4bGFiID0iSW5kZXgiLA0KICAgICB5bGFiID0gIkhlaWdodCIpDQpwbG90KGh3ZGF0YSRIZWlnaHQgfiBod2RhdGEkV2VpZ2h0LCANCiAgICAgbWFpbiA9ICJTY2F0dGVyIFBsb3QgSGVpZ2h0IFZzIFdlaWdodCIsDQogICAgIHhsYWIgPSJIZWlnaHQiLCB5bGFiID0gIldlaWdodCIpDQpgYGANCg0KIyMgRmluZGluZyB0aGUgbWVhbiB2ZWN0b3IsIGNvdmFyaWFuY2UgbWF0cml4IGFuZCBjb3JyZWxhdGlvbiBtYXRyaXg6DQoNCioqRmluZGluZyB0aGUgbWVhbiB2ZWN0b3I6KioNCg0KYGBge3J9DQpvbmUgPSByZXAoMSwgbnJvdyhod2RhdGEpKQ0KTWVhblZlYyA9IDEvbnJvdyhod2RhdGEpICogdChod2RhdGEpICUqJSBvbmUNCg0KYGBgDQpUaGUgbWVhbiB2ZWN0b3IgaXMgZ2l2ZW4gYnksIA0KYGBge3J9DQpNZWFuVmVjDQpgYGANCg0KDQoNCioqRmluZGluZyB0aGUgY292YXJpYW5jZSBtYXRyaXg6KioNCmBgYHtyfQ0KDQpZID0gaHdkYXRhIC0gb25lICUqJSB0KE1lYW5WZWMpDQpZID0gYXMubWF0cml4KFkpDQpDb3ZNYXQgPSAxLyhucm93KGh3ZGF0YSkgLSAxICkgKiB0KFkpICUqJSBZDQpgYGANCg0KDQpUaGUgdmFyaWFuY2UtY292YXJpYW5jZSBtYXRyaXggaXMgZ2l2ZW4gYnksIA0KYGBge3J9DQpDb3ZNYXQNCmBgYA0KDQoNCg0KDQoNCg0KDQoqKkZpbmRpbmcgY29ycmVsYXRpb24gbWF0cml4OioqDQoNCmBgYHtyfQ0KdmFyID0gZGlhZyhDb3ZNYXQpDQpzZCA9IGRpYWcoMS9zcXJ0KHZhciksIG5jb2wgPSAyKQ0KQ29yTWF0ID0gc2QgJSolIENvdk1hdCAlKiUgc2QNCmBgYA0KDQpUaGVyZWZvcmUgdGhlIGNvcnJlbGF0aW9uIG1hdHJpeCBpcyBnaXZlbiBieSANCmBgYHtyfQ0KQ29yTWF0ID0gZGF0YS5mcmFtZShDb3JNYXQpDQpjb2xuYW1lcyhDb3JNYXQpID0gY29sbmFtZXMoQ292TWF0KQ0Kcm93bmFtZXMoQ29yTWF0KSA9IHJvd25hbWVzKENvdk1hdCkNCkNvck1hdA0KYGBgDQoNCg0KIyMgQ3JlYXRpbmcgYSBuZXcgZGF0YSBzZXQgYnkgY29udmVydGluZyB0aGUgdW5pdHM6DQoNCmBgYHtyfQ0KbmV3SFdkYXRhID0gZGF0YS5mcmFtZShOZXdIdCA9IDAuMDI1NCpod2RhdGEkSGVpZ2h0LA0KICAgICAgICAgICAgICAgICAgICAgICBOZXdXdCA9IDAuNDUzNSpod2RhdGEkV2VpZ2h0KQ0KYGBgDQoNClRoZSBmaXJzdCBmZXcgcm93cyBvZiB0aGUgbmV3IGRhdGEgc2V0IGFyZSwgDQoNCmBgYHtyfQ0KaGVhZChuZXdIV2RhdGEpDQpgYGANCg0KDQoNCiMjIEZpbmRpbmcgdGhlIG1lYW4gdmVjdG9yLCBjb3ZhcmlhbmNlIG1hdHJpeCBhbmQgY29ycmVsYXRpb24gbWF0cml4IGZvciB0aGUgbmV3IGRhdGEgc2V0Og0KDQoqKkZpbmRpbmcgdGhlIG1lYW4gdmVjdG9yOioqDQoNCmBgYHtyfQ0Kb25lID0gcmVwKDEsIG5yb3cobmV3SFdkYXRhKSkNCk5ld01lYW5WZWMgPSAxL25yb3cobmV3SFdkYXRhKSAqIHQobmV3SFdkYXRhKSAlKiUgb25lDQpgYGANClRoZSBtZWFuIHZlY3RvciBpcyBnaXZlbiBieSwgDQpgYGB7cn0NCk5ld01lYW5WZWMNCmBgYA0KDQoNCg0KKipGaW5kaW5nIHRoZSBjb3ZhcmlhbmNlIG1hdHJpeDoqKg0KYGBge3J9DQpZID0gbmV3SFdkYXRhIC0gb25lICUqJSB0KE5ld01lYW5WZWMpDQpZID0gYXMubWF0cml4KFkpDQpOZXdDb3ZNYXQgPSAxLyhucm93KG5ld0hXZGF0YSkgLSAxICkgKiB0KFkpICUqJSBZDQpgYGANCg0KDQpUaGUgdmFyaWFuY2UtY292YXJpYW5jZSBtYXRyaXggaXMgZ2l2ZW4gYnksIA0KYGBge3J9DQpOZXdDb3ZNYXQNCmBgYA0KDQoNCioqQ29tcGFyaXNvbiBvZiBjb3ZhcmlhbmNlIG1hdHJpY2VzIGJldHdlZW4gT3JpZ2luYWwgZGF0YSBzZXQgYW5kIG5ldyBkYXRhIHNldDoqKg0KDQpgYGB7cn0NCkNvdk1hdCAtIE5ld0Nvdk1hdA0KYGBgDQoNCg0KQ2xlYXJseSB0aGUgY292YXJpYW5jZSBtYXRyaWNlcyBhcmUgKipkaWZmZXJlbnQqKi4gDQoNCg0KDQoNCg0KKipGaW5kaW5nIGNvcnJlbGF0aW9uIG1hdHJpeDoqKg0KDQpgYGB7cn0NCm5ld3ZhciA9IGRpYWcoTmV3Q292TWF0KQ0KbmV3c2QgPSBkaWFnKDEvc3FydChuZXd2YXIpLCBuY29sID0gMikNCk5ld0Nvck1hdCA9IG5ld3NkICUqJSBOZXdDb3ZNYXQgJSolIG5ld3NkDQpgYGANCg0KVGhlcmVmb3JlIHRoZSBjb3JyZWxhdGlvbiBtYXRyaXggaXMgZ2l2ZW4gYnkgDQpgYGB7cn0NCk5ld0Nvck1hdCA9IGRhdGEuZnJhbWUoTmV3Q29yTWF0KQ0KY29sbmFtZXMoTmV3Q29yTWF0KSA9IGNvbG5hbWVzKE5ld0Nvdk1hdCkNCnJvd25hbWVzKE5ld0Nvck1hdCkgPSByb3duYW1lcyhOZXdDb3ZNYXQpDQpOZXdDb3JNYXQNCmBgYA0KDQoNCg0KDQoqKkNvbXBhcmlzb24gb2YgY292YXJpYW5jZSBtYXRyaWNlcyBiZXR3ZWVuIE9yaWdpbmFsIGRhdGEgc2V0IGFuZCBuZXcgZGF0YSBzZXQ6KioNCg0KYGBge3J9DQpvcHRpb25zKGRpZ2l0cyA9IDE3KSAjIFRvIG1haW50YWluIHRoZSBkaWdpdHMgd2hlbiBrbml0dGluZyB0byBwZGYuDQpDb3JNYXQgLSBOZXdDb3JNYXQNCmBgYA0KDQpBbGwgdGhlIGVudHJpZXMgaW4gdGhlIGFib3ZlIGRpZmZlcmVuY2UgbWF0cml4IGlzIHplcm8gKG9yIGFwcHJveGltYXRlbHkgemVybykgYW5kIGhlbmNlIGl0IGlzIGNvbmNsdWRlZCB0aGF0IHRoZXJlIGlzIG5vIGRpZmZlcmVuY2UgYmV0d2VlbiBjb3JyZWxhdGlvbiBtYXRyaWNlcyBmcm9tICB0aGUgb3JpZ2luYWwgZGF0YSBzZXQgYW5kIG5ldyBkYXRhIHNldC4gDQoNCg0KDQoNCg0KDQoNCg0K</div>
 
 
 

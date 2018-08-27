@@ -1,8 +1,10 @@
 ---
 title: "Practicals 3"
-subtitle: "Mean, Covariance and Corelation of Bivariate data"
 author: "Your Name (Reg.No)"
-output: html_notebook
+subtitle: Mean, Covariance and Corelation of Bivariate data
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 Consider the data on the height (in inches) and weight (in lbs.) of 20 college-age males
@@ -18,3 +20,5 @@ ams, respectively, in the height and weight data of 20 college-age males.
 
   - Calculate the covariance between height and weight in the new dataset. Compare it to the covariance in the original dataset. Do you see a difference?
   - Calculate as well the correlation between height and weight in the new dataset using the matrix operation on the covariance matrix. Compare it to the correlation in the original dataset. Do you now see a difference?
+
+
