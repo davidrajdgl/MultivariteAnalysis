@@ -3,8 +3,8 @@ title: "Practicals 3"
 author: "Your Name (Reg.No)"
 subtitle: Mean, Covariance and Corelation of Bivariate data
 output:
-  pdf_document: default
   html_notebook: default
+  pdf_document: default
 ---
 
 Consider the data on the height (in inches) and weight (in lbs.) of 20 college-age males
