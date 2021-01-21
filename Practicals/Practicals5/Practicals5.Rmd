@@ -1,0 +1,43 @@
+---
+title: "Practicals 5"
+author: "David Raj Micheal"
+subtitle: Factor Analysis
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+
+```{r setup, include=FALSE}
+#Setup chunk
+library(printr)
+options(digits = 3)
+```
+
+```{r}
+#Load the data 
+library(readxl)
+data = read_excel('nutritian.xlsx')
+head(data)
+
+```
+```{r}
+#Load the psych package to perform factor analysis
+
+library(psych)
+head(data)
+```
+```{r}
+R = cor(data)
+fact.anal = fa(R, nfactors = 3, rotate="oblique")
+fact.anal
+```
+```{r}
+fact.anal$residual
+```
+
+```{r}
+#The following function does the factor analysis using maximum likelihood method
+factanal(data,factors = 3,rotation = "varimax", scores = "regression")
+```
+

@@ -1,0 +1,307 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Practicals 5},
+            pdfauthor={David Raj Micheal},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Practicals 5}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \subtitle{Factor Analysis}
+  \author{David Raj Micheal}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Load the data }
+\KeywordTok{library}\NormalTok{(readxl)}
+\NormalTok{data =}\StringTok{ }\KeywordTok{read_excel}\NormalTok{(}\StringTok{'nutritian.xlsx'}\NormalTok{)}
+\KeywordTok{head}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}rrrrrrr@{}}
+\toprule
+Protein\_g & Fat\_g & Carb\_g & Sugar\_g & VitB6\_mg & VitB12\_mcg &
+VitE\_mg\tabularnewline
+\midrule
+\endhead
+0.85 & 81.1 & 0.06 & 0.06 & 0.003 & 0.17 & 2.32\tabularnewline
+0.85 & 81.1 & 0.06 & 0.06 & 0.003 & 0.13 & 2.32\tabularnewline
+0.28 & 99.5 & 0.00 & 0.00 & 0.001 & 0.01 & 2.80\tabularnewline
+21.40 & 28.7 & 2.34 & 0.50 & 0.166 & 1.22 & 0.25\tabularnewline
+23.24 & 29.7 & 2.79 & 0.51 & 0.065 & 1.26 & 0.26\tabularnewline
+20.75 & 27.7 & 0.45 & 0.45 & 0.235 & 1.65 & 0.24\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Load the psych package to perform factor analysis}
+
+\KeywordTok{library}\NormalTok{(psych)}
+\KeywordTok{head}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}rrrrrrr@{}}
+\toprule
+Protein\_g & Fat\_g & Carb\_g & Sugar\_g & VitB6\_mg & VitB12\_mcg &
+VitE\_mg\tabularnewline
+\midrule
+\endhead
+0.85 & 81.1 & 0.06 & 0.06 & 0.003 & 0.17 & 2.32\tabularnewline
+0.85 & 81.1 & 0.06 & 0.06 & 0.003 & 0.13 & 2.32\tabularnewline
+0.28 & 99.5 & 0.00 & 0.00 & 0.001 & 0.01 & 2.80\tabularnewline
+21.40 & 28.7 & 2.34 & 0.50 & 0.166 & 1.22 & 0.25\tabularnewline
+23.24 & 29.7 & 2.79 & 0.51 & 0.065 & 1.26 & 0.26\tabularnewline
+20.75 & 27.7 & 0.45 & 0.45 & 0.235 & 1.65 & 0.24\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{R =}\StringTok{ }\KeywordTok{cor}\NormalTok{(data)}
+\NormalTok{fact.anal =}\StringTok{ }\KeywordTok{fa}\NormalTok{(R, }\DataTypeTok{nfactors =} \DecValTok{3}\NormalTok{, }\DataTypeTok{rotate=}\StringTok{"oblique"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Specified rotation not found, rotate='none' used
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in fac(r = r, nfactors = nfactors, n.obs = n.obs, rotate =
+## rotate, : An ultra-Heywood case was detected. Examine the results carefully
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{fact.anal}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Factor Analysis using method =  minres
+## Call: fa(r = R, nfactors = 3, rotate = "oblique")
+## Standardized loadings (pattern matrix) based upon correlation matrix
+##              MR1   MR2   MR3   h2      u2 com
+## Protein_g  -0.35  0.30  0.34 0.33  0.6725 2.9
+## Fat_g       0.04  0.26 -0.24 0.13  0.8700 2.0
+## Carb_g      0.87 -0.22  0.16 0.84  0.1603 1.2
+## Sugar_g     0.64 -0.17  0.05 0.45  0.5546 1.2
+## VitB6_mg    0.24  0.45  0.53 0.54  0.4636 2.4
+## VitB12_mcg -0.09  0.26  0.34 0.19  0.8083 2.0
+## VitE_mg     0.37  0.85 -0.37 1.00 -0.0016 1.8
+## 
+##                        MR1  MR2  MR3
+## SS loadings           1.50 1.23 0.74
+## Proportion Var        0.21 0.18 0.11
+## Cumulative Var        0.21 0.39 0.50
+## Proportion Explained  0.43 0.35 0.21
+## Cumulative Proportion 0.43 0.79 1.00
+## 
+## Mean item complexity =  1.9
+## Test of the hypothesis that 3 factors are sufficient.
+## 
+## The degrees of freedom for the null model are  21  and the objective function was  1.1
+## The degrees of freedom for the model are 3  and the objective function was  0.03 
+## 
+## The root mean square of the residuals (RMSR) is  0.02 
+## The df corrected root mean square of the residuals is  0.06 
+## 
+## Fit based upon off diagonal values = 0.99
+## Measures of factor score adequacy             
+##                                                    MR1  MR2  MR3
+## Correlation of (regression) scores with factors   0.94 0.96 0.82
+## Multiple R square of scores with factors          0.88 0.91 0.67
+## Minimum correlation of possible factor scores     0.77 0.83 0.33
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{fact.anal}\OperatorTok{$}\NormalTok{residual}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}lrrrrrrr@{}}
+\toprule
+& Protein\_g & Fat\_g & Carb\_g & Sugar\_g & VitB6\_mg & VitB12\_mcg &
+VitE\_mg\tabularnewline
+\midrule
+\endhead
+Protein\_g & 0.673 & 0.071 & 0.015 & -0.006 & -0.002 & 0.021 &
+-0.025\tabularnewline
+Fat\_g & 0.071 & 0.870 & 0.013 & 0.032 & -0.045 & -0.003 &
+0.009\tabularnewline
+Carb\_g & 0.015 & 0.013 & 0.160 & 0.007 & 0.002 & -0.015 &
+-0.004\tabularnewline
+Sugar\_g & -0.006 & 0.032 & 0.007 & 0.555 & -0.013 & 0.034 &
+-0.010\tabularnewline
+VitB6\_mg & -0.002 & -0.045 & 0.002 & -0.013 & 0.464 & -0.011 &
+0.016\tabularnewline
+VitB12\_mcg & 0.021 & -0.003 & -0.015 & 0.034 & -0.011 & 0.808 &
+0.002\tabularnewline
+VitE\_mg & -0.025 & 0.009 & -0.004 & -0.010 & 0.016 & 0.002 &
+-0.002\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#The following function does the factor analysis using maximum likelihood method}
+\KeywordTok{factanal}\NormalTok{(data,}\DataTypeTok{factors =} \DecValTok{3}\NormalTok{,}\DataTypeTok{rotation =} \StringTok{"varimax"}\NormalTok{, }\DataTypeTok{scores =} \StringTok{"regression"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## factanal(x = data, factors = 3, scores = "regression", rotation = "varimax")
+## 
+## Uniquenesses:
+##  Protein_g      Fat_g     Carb_g    Sugar_g   VitB6_mg VitB12_mcg 
+##      0.693      0.859      0.166      0.543      0.406      0.825 
+##    VitE_mg 
+##      0.005 
+## 
+## Loadings:
+##            Factor1 Factor2 Factor3
+## Protein_g  -0.341           0.429 
+## Fat_g               0.367         
+## Carb_g      0.913                 
+## Sugar_g     0.673                 
+## VitB6_mg    0.215   0.115   0.731 
+## VitB12_mcg                  0.406 
+## VitE_mg     0.117   0.969   0.205 
+## 
+##                Factor1 Factor2 Factor3
+## SS loadings      1.475   1.096   0.933
+## Proportion Var   0.211   0.157   0.133
+## Cumulative Var   0.211   0.367   0.501
+## 
+## Test of the hypothesis that 3 factors are sufficient.
+## The chi square statistic is 239 on 3 degrees of freedom.
+## The p-value is 1.99e-51
+\end{verbatim}
+
+
+\end{document}
